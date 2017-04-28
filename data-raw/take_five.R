@@ -16,7 +16,7 @@ library(tidyr)
 ## GET DATA ====================================================================
 ## To learn more about using th Socrata API with this data set:
 ## https://dev.socrata.com/foundry/data.ny.gov/hh4x-xmbw
-take_five <- read.socrata("https://data.ny.gov/resource/hh4x-xmbw.json?$$app_token=YOUR_APP_TOKEN")
+take_five <- read.socrata("https://data.ny.gov/resource/hh4x-xmbw.json?$$app_token=H19RFprGJdx021RQkSuKczYjn")
 
 
 
