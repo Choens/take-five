@@ -10,9 +10,9 @@
 skew <- function(x) {
 
     ## These will help us in a minute.
-    x_median <- median(take_five$winning_numbers)
-    x_mean <- mean(take_five$winning_numbers)
-    x_sd <- sd(take_five$winning_numbers)
+    x_median <- median(x, na.rm=TRUE)
+    x_mean <- mean(x, na.rm=TRUE)
+    x_sd <- sd(x, na.rm=TRUE)
 
     x_skew <- 3*(x_mean - x_median) / x_sd
 
