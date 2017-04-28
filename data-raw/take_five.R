@@ -8,10 +8,10 @@
 
 
 ## INIT ========================================================================
-library(dplyr)
-library(pander)
-library(RSocrata)
-library(tidyr)
+library(dplyr, lib="~/lib")
+library(pander, lib="~/lib")
+library(RSocrata, lib="~/lib")
+library(tidyr, lib="~/lib")
 
 ## GET DATA ====================================================================
 ## To learn more about using th Socrata API with this data set:
@@ -36,8 +36,7 @@ take_five <-
     take_five %>%
     transform(winning_numbers=strsplit(winning_numbers, split=" ")) %>%
     unnest(winning_numbers) %>%
-    select(draw_date, winning_numbers=winning_numbers, bonus) %>%
-    distinct()
+    select(draw_date, winning_numbers=winning_numbers, bonus)
 
 ## Sets Data Class Appropriately:
 take_five$winning_numbers <- as.numeric(take_five$winning_numbers)

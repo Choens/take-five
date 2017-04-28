@@ -6,6 +6,7 @@
 ## #############################################################################
 
 packages <- c("dplyr",
+              "pander",
               "tidyr",
               "RSocrata")
-install.packages(packages)
+install.packages(packages, lib="~/lib")

@@ -9,8 +9,8 @@
 
 
 ## INIT ========================================================================
-library(dplyr)
-library(pander)
+library(dplyr, lib="~/lib")
+library(pander, lib="~/lib")
 source("R/skew.R")
 
 
